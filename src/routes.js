@@ -2,8 +2,10 @@ import Router from 'express';
 
 const routes = new Router();
 
-routes.get('/', (req, res) => {
-  res.send("Deu certo");
+const users = [{ name: 'Junior', email: 'junior@email.com' }];
+
+routes.get('/users', (req, res) => {
+  return res.json(users);
 });
 
 export default routes;
