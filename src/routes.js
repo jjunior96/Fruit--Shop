@@ -20,6 +20,6 @@ routes.post('/products', upload.single('image'), ProductController.store);
 
 routes.get('/profile', ProfileController.show);
 
-routes.post('/products/:id/cart', CartController.store);
+routes.post('/products/:product_id/cart', CartController.store);
 
 export default routes;
